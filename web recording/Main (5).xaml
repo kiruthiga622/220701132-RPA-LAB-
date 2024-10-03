@@ -1,0 +1,210 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="792,3133" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="802,3068" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="740,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter email" Title="Enter email address">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="740,239" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter password" Title="password">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="740,2399" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[“www.uipath.com”]">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="706,2274" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | UiPa" sap:VirtualizedContainerService.HintSize="644,2163" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cdbc4283-42ac-4fcb-b4fd-fb81f7e92384" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1906" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Continue with UiPath" sap:VirtualizedContainerService.HintSize="484,1791" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8d89273b-0204-48f4-a451-c3b855226c69" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1574" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Try UiPath Free'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cdbc4283-42ac-4fcb-b4fd-fb81f7e92384" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.uipath.com/" DesignTimeRectangle="1148, 153, 167, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Try UiPath Free'" FullSelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Try UiPath Free' parentid='gatsby-focus-wrapper' tag='A' type='' class='sc-19d6789-0 eiFOLM CTA ' check:innerText='Try UiPath Free' /&gt;" Guid="435116dc-0717-461e-98da-d0452a17da2e" InformativeScreenshot="e1f3101c8779597daea6ae64e1a8cf43.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue with Google'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://account.uipath.com/login?state=hKFo2SAzeXRwZ1pKVkpmUnNQbU1lbHRtM05Ham9rbDlmc1dIOKFupWxvZ2luo3RpZNkgejlBdS1Qcm1zaTk1MkFvbFRyUE5Td0RIeXVQbUFSS2OjY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=eEJwdll6dFRQNWouNnRYZTE3RXJkUlJNeXRQRXVHNWxUMGhmZ2Z1T2Y0WQ%3D%3D&amp;code_challenge=LjNyiGOHSHhROtdKlCuNhH4-6f-cZ9MllsLeEC2sFK0&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" DesignTimeRectangle="834, 536, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue with Google'" FullSelectorArgument="&lt;webctrl aaname='Continue with Google' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continue with Google' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButton-fullWidth jss27 jss28 css-g9vppd' check:innerText='Continue with Google' /&gt;" Guid="e7cf2c70-f963-4895-8a0f-e42d9679fbfa" InformativeScreenshot="b0a9c0547ac23e164e70cda6ecad0bf9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Use another account'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yxWy8gRiS6e_FEoPRL6gHJyByjvmpZ7a&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow" DesignTimeRectangle="755, 368, 157, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Use another account'" FullSelectorArgument="&lt;webctrl aaname='Use another account' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Use another account' tag='DIV' type='' class='AsY17b' check:innerText='Use another account' /&gt;" Guid="bf5cf7da-e46e-4888-93f1-9e5499583ca2" InformativeScreenshot="d81b079c40e7dcec1e01d84f5540da7d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in – Google accounts' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT identifierId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Text="[email]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yxWy8gRiS6e_FEoPRL6gHJyByjvmpZ7a&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO9L7GQmWY6ZRPArKE9JUJcy0vNM6sOKuIvUy7_ImEzuX94UUKR6kmZUsl5aIr-f8mHmoDpWXLh4HqFBLHmykVnmrhuYrbExogedErb9iWqoaVefuk5PuyMK8_hXBOlx5h5vWfiJkqnyVpNhGKtflMo2fV0-y64SZbcozliI2VwBWX_vURWNivMDHcGpppzls0FwYXGiey79jhHHI8mb9WRpmor8umu6ghGuMMgncMfHB0cFF1FLNrXzfaNiJ-Lob7VErKt5stQpYOxzLzpEIgxG8r9AUL0fXFKma1iDFEKWfo52kZOVNlE6SrcGBmBLJN5LqkhYHb438YYXBqs4bkPYwdOxvBP1t1mAgKdO6ICuMXXsIhrpXaKBX9uIH2rdFkZ4jjF6HBiQZbIMP7HZF3Dl2-ClIOUAnegV0yPAGNr-BcBN0G-77_phlDEWRhYSPBvDqdO0KNoXD-iCPz0Xb0R3vPwrA%26flowName%3DGeneralOAuthFlow%26as%3DS973280207%253A1726218050212898%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23" DesignTimeRectangle="716, 285, 417, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT identifierId'" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b3c4ec02-ffcd-4791-852d-1d26a2abf1d2" InformativeScreenshot="c528e4517ad8b0ac86fed342ef549675.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/identifier?prompt=select_account&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;scope=email%20profile&amp;state=yxWy8gRiS6e_FEoPRL6gHJyByjvmpZ7a&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;service=lso&amp;o2v=1&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO9L7GQmWY6ZRPArKE9JUJcy0vNM6sOKuIvUy7_ImEzuX94UUKR6kmZUsl5aIr-f8mHmoDpWXLh4HqFBLHmykVnmrhuYrbExogedErb9iWqoaVefuk5PuyMK8_hXBOlx5h5vWfiJkqnyVpNhGKtflMo2fV0-y64SZbcozliI2VwBWX_vURWNivMDHcGpppzls0FwYXGiey79jhHHI8mb9WRpmor8umu6ghGuMMgncMfHB0cFF1FLNrXzfaNiJ-Lob7VErKt5stQpYOxzLzpEIgxG8r9AUL0fXFKma1iDFEKWfo52kZOVNlE6SrcGBmBLJN5LqkhYHb438YYXBqs4bkPYwdOxvBP1t1mAgKdO6ICuMXXsIhrpXaKBX9uIH2rdFkZ4jjF6HBiQZbIMP7HZF3Dl2-ClIOUAnegV0yPAGNr-BcBN0G-77_phlDEWRhYSPBvDqdO0KNoXD-iCPz0Xb0R3vPwrA%26flowName%3DGeneralOAuthFlow%26as%3DS973280207%253A1726218050212898%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23" DesignTimeRectangle="1055, 490, 79, 48" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='identifierNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='identifierNext' tag='DIV' type='' aaname='' /&gt;" Guid="c2853718-d81d-423d-a0cf-41342cc63607" InformativeScreenshot="13d4516e0a28dac677a305d13c6dec71.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Text="[password]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AKeb6mzmlZmgZ3ZeUDoQ--wc_1UxEf7pbPU-zwq6zgk2RzNTW5IxtG4p6s5LmNXM&amp;checkConnection=youtube%3A186&amp;checkedDomains=youtube&amp;cid=1&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO9L7GQmWY6ZRPArKE9JUJcy0vNM6sOKuIvUy7_ImEzuX94UUKR6kmZUsl5aIr-f8mHmoDpWXLh4HqFBLHmykVnmrhuYrbExogedErb9iWqoaVefuk5PuyMK8_hXBOlx5h5vWfiJkqnyVpNhGKtflMo2fV0-y64SZbcozliI2VwBWX_vURWNivMDHcGpppzls0FwYXGiey79jhHHI8mb9WRpmor8umu6ghGuMMgncMfHB0cFF1FLNrXzfaNiJ-Lob7VErKt5stQpYOxzLzpEIgxG8r9AUL0fXFKma1iDFEKWfo52kZOVNlE6SrcGBmBLJN5LqkhYHb438YYXBqs4bkPYwdOxvBP1t1mAgKdO6ICuMXXsIhrpXaKBX9uIH2rdFkZ4jjF6HBiQZbIMP7HZF3Dl2-ClIOUAnegV0yPAGNr-BcBN0G-77_phlDEWRhYSPBvDqdO0KNoXD-iCPz0Xb0R3vPwrA%26flowName%3DGeneralOAuthFlow%26as%3DS973280207%253A1726218050212898%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;o2v=1&amp;prompt=select_account&amp;pstMsg=1&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;response_type=code&amp;scope=email%20profile&amp;service=lso&amp;state=yxWy8gRiS6e_FEoPRL6gHJyByjvmpZ7a" DesignTimeRectangle="717, 304, 415, 52" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="f6c34242-19f0-4364-bd5d-faf9ff7cca92" InformativeScreenshot="cabed2db18ed3c8f924ee15195872028.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8d89273b-0204-48f4-a451-c3b855226c69" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AKeb6mzmlZmgZ3ZeUDoQ--wc_1UxEf7pbPU-zwq6zgk2RzNTW5IxtG4p6s5LmNXM&amp;checkConnection=youtube%3A186&amp;checkedDomains=youtube&amp;cid=1&amp;client_id=728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com&amp;continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAO9L7GQmWY6ZRPArKE9JUJcy0vNM6sOKuIvUy7_ImEzuX94UUKR6kmZUsl5aIr-f8mHmoDpWXLh4HqFBLHmykVnmrhuYrbExogedErb9iWqoaVefuk5PuyMK8_hXBOlx5h5vWfiJkqnyVpNhGKtflMo2fV0-y64SZbcozliI2VwBWX_vURWNivMDHcGpppzls0FwYXGiey79jhHHI8mb9WRpmor8umu6ghGuMMgncMfHB0cFF1FLNrXzfaNiJ-Lob7VErKt5stQpYOxzLzpEIgxG8r9AUL0fXFKma1iDFEKWfo52kZOVNlE6SrcGBmBLJN5LqkhYHb438YYXBqs4bkPYwdOxvBP1t1mAgKdO6ICuMXXsIhrpXaKBX9uIH2rdFkZ4jjF6HBiQZbIMP7HZF3Dl2-ClIOUAnegV0yPAGNr-BcBN0G-77_phlDEWRhYSPBvDqdO0KNoXD-iCPz0Xb0R3vPwrA%26flowName%3DGeneralOAuthFlow%26as%3DS973280207%253A1726218050212898%26client_id%3D728299124437-7jehbc7o304f05q191vsc8nuf0g9truf.apps.googleusercontent.com%23&amp;ddm=0&amp;flowName=GeneralOAuthFlow&amp;o2v=1&amp;prompt=select_account&amp;pstMsg=1&amp;redirect_uri=https%3A%2F%2Faccount.uipath.com%2Flogin%2Fcallback&amp;response_type=code&amp;scope=email%20profile&amp;service=lso&amp;state=yxWy8gRiS6e_FEoPRL6gHJyByjvmpZ7a" DesignTimeRectangle="1055, 513, 79, 48" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='passwordNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='passwordNext' tag='DIV' type='' aaname='' /&gt;" Guid="7395ab3c-04a3-4ee1-ae28-e79b44025ed1" InformativeScreenshot="c25dee3ad7c4eed33cd6ca3658812cda.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in - Google Accounts' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACEklEQVRYR+2Xv0scURSFV1fXrEFEIUsSbZLCIp2VKKTQYq00C5Igai0hTf4AtYmFlWBiJdiGpEwbMIJY2FmIGESQkMLKNAFR/P2dx51hnA1E3Xmjggc+5s257745szs7M5s5LBbObpJbF+AEjjyjY/wzgApT0AclT2jtaTiFsgBKV8p4FscYhPBT8BaAtargAWTNcmLffwDWqYP38APm4JmVLh+AcQ50BqLG7AvC11lG57mzZdsDfyFYe9o1IMb/D8A2D7OwaAy77pjwG2He5uhs+81/DccQrP0Zqq12qQANsGK+GJMfF/4jWI/Me2d+C3yHPfgFLpjE2H8AiXEzdMBzqDI7nQBsdT10QTfoenjiGhDjVAK0wk84hH0Ycg2IcWoBts3TXW/ENSDG9wHuZoBx1x0TvrcAD2HZfDHpumPCfwybkXmj5lccoAa+mS++wIWnmoTXDrs2J9pfWQCJ8YdIbQc6reTEvkLqBSY654XVEgmgO9kfq4k1eAsvoRc+QvSJ9xVy1ptIgFqYsVqAGvWAOYh44jeEnxDjygNI7Osq1+NWt9NgXhxdhK+sxYn9ZAJIePUwAHqmr8IWbMACTECbTQ2FVwB9JfolLUHRSlcPEIhaFprgKegAeSuViZrelPRSo/AifKNifL0ASYlj3N4AMvWn4Q1okg+09ifQhVkWQKigID4JDy7iAVLnhgMUzs4BKkIMusju2kIAAAAASUVORK5CYII=" InformativeScreenshot="bf6f04fb5207a4cdd8b88b7e79c0b280.jpg" Selector="&lt;html app='msedge.exe' title='Continue with UiPath' /&gt;" Title="Continue with UiPath" Url="https://account.uipath.com/login?state=hKFo2SAzeXRwZ1pKVkpmUnNQbU1lbHRtM05Ham9rbDlmc1dIOKFupWxvZ2luo3RpZNkgejlBdS1Qcm1zaTk1MkFvbFRyUE5Td0RIeXVQbUFSS2OjY2lk2SAyeXQ5SGRGNDVPMDA2SDlxZFBjUDlhczVjZEdibkNXcw&amp;client=2yt9HdF45O006H9qdPcP9as5cdGbnCWs&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fuipath.eu.auth0.com%2Fapi%2Fv2%2F&amp;scope=openid%20profile%20email%20read%3Acurrent_user%20update%3Acurrent_user_metadata&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fportal_%2FauthCallback&amp;type=signup&amp;platform_name=UiPath%20Automation%20Cloud%20for%20enterprise&amp;subscription_plan=trial&amp;ecommerceRedirect=false&amp;retryUrl=&amp;product_name=UiPath%20Automation%20Cloud&amp;company_code=B2B_CP&amp;cloudrpa_signup_subdomain=%2Fportal_&amp;register_endpoint=%2Fregister&amp;use_local_registration=false&amp;response_type=code&amp;response_mode=query&amp;nonce=eEJwdll6dFRQNWouNnRYZTE3RXJkUlJNeXRQRXVHNWxUMGhmZ2Z1T2Y0WQ%3D%3D&amp;code_challenge=LjNyiGOHSHhROtdKlCuNhH4-6f-cZ9MllsLeEC2sFK0&amp;code_challenge_method=S256&amp;auth0Client=eyJuYW1lIjoiYXV0aDAtcmVhY3QiLCJ2ZXJzaW9uIjoiMS4yLjAifQ%3D%3D" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGSSURBVFhH7ZexSwMxGMU7iJM4iCRX6egkUm4WJ5HLVYqDf0BxcHZycnWQIk7i4OgkDo4OIk4OTg4dnUWcxEFESK7El/D1LtdDUa+9Ir0Hb8h7X5JfS9ujFRkwPUqXAP0AbSnYxlBt7nDuTANgoDJkEcQYAKiAt3DmFXwkhTdNcTEAUcDqfee2qfo5ANYn8A15k+KM0J0lc9zux6tvYp2cG7BzOwz9BuDe6fYozgjdYzLHt02mhTeFdYfyD5y7aoehQgCMdMOblIL7KqzOUmRVGEAkeD0KPd8YEDMUFweA9VsvV4K3KC4BSoD/BXDrdMcUZ4QuvggAWxQPBODC6a4pTikK2Zwzg4tYk6r8ACpgO07XjUR1kapYyA+cGa3Waoyq/AAyZDVkyumfzFuM3MeBS1gfwl2nv6StVljnAzBCtp/qv/Y7fvcXaJsVsvwAujE/gdw8lpOZrF9kyFdoSyzk+QF6QrcMn8IP8Cv8DJtvyS4+K/GDxhW6O9g8kjsAWKf4bwCDVAnwPcDI/5iMwOMOwPQnFLezb0DhfhIAAAAASUVORK5CYII=" InformativeScreenshot="cb4816503976d5279a080c9e3cb22753.jpg" Selector="&lt;html app='msedge.exe' title='AI at work-The Business Automation Platform™-Leader in RPA, AI &amp;amp; Automation | UiPath' /&gt;" Title="AI at work-The Business Automation Platform™-Leader in RPA, AI &amp; Automation | UiPath" Url="https://www.uipath.com/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
